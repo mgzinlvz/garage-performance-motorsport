@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Conheça os principais carros esportivos do mundo.">
+    <title>Garage Performance | Esportivos</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  
+    <header class="cabecalho">
+
+        <nav class="menu d-flex flex-wrap align-items-center justify-content-between">
+
+            <a href="index.html" class="logo">
+                GARAGE<span> PERFORMANCE</span>
+            </a>
+
+            <ul class="menu-links d-flex flex-wrap gap-3">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="esportivos.html" aria-current="page">Esportivos</a></li>
+                <li><a href="preparacoes.html">Preparações</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="https://www.fia.com/" target="_blank" rel="noopener noreferrer">FIA</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="titulo-pagina">
+
+            <h1>CARROS <span>ESPORTIVOS</span></h1>
+
+            <p>
+                Conheça máquinas que representam potência,
+                tecnologia e velocidade.
+            </p>
+
+        </section>
+
+      
+        <section class="container mb-4">
+
+            <div class="alert alert-dark border-warning" role="alert">
+
+                Explore alguns dos esportivos mais conhecidos
+                do universo automotivo!
+
+            </div>
+
+        </section>
+
+   
+        <section class="container">
+
+            <div class="cards">
+
+        
+                <article class="card h-100">
+
+                    <img
+                        src="img/nissan-gtr.jpg"
+                        alt="Nissan GT-R R35"
+                    >
+
+                    <div class="card-conteudo">
+
+                        <h3>Nissan GT-R R35</h3>
+
+                        <p>
+                            Conhecido como Godzilla, combina
+                            motor V6 biturbo e tração integral.
+                        </p>
+
+                        <p><strong>Motor:</strong> 3.8 V6 Biturbo</p>
+
+                        <p>
+                            <strong>Potência:</strong>
+                            varia conforme o ano e a versão.
+                        </p>
+
+                        <button
+                            class="btn btn-motorsport"
+                            onclick="mostrarCarro('Nissan GT-R R35')"
+                        >
+                            Conhecer modelo
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="card h-100">
+
+                    <img
+                        src="img/toyota-supra.jpg"
+                        alt="Toyota Supra MK4"
+                    >
+
+                    <div class="card-conteudo">
+
+                        <h3>Toyota Supra MK4</h3>
+
+                        <p>
+                            Um ícone da preparação automotiva,
+                            famoso pelo motor 2JZ.
+                        </p>
+
+                        <p><strong>Motor:</strong> 3.0 seis cilindros</p>
+
+                        <p>
+                            <strong>Potência:</strong>
+                            varia conforme a versão.
+                        </p>
+
+                        <button
+                            class="btn btn-motorsport"
+                            onclick="mostrarCarro('Toyota Supra MK4')"
+                        >
+                            Conhecer modelo
+                        </button>
+
+                    </div>
+
+                </article>
+
+           
+                <article class="card h-100">
+
+                    <img
+                        src="img/porsche-911.jpg"
+                        alt="Porsche 911"
+                    >
+
+                    <div class="card-conteudo">
+
+                        <h3>Porsche 911</h3>
+
+                        <p>
+                            Um esportivo reconhecido pela
+                            engenharia e desempenho.
+                        </p>
+
+                        <p><strong>Motor:</strong> varia conforme a versão.</p>
+
+                        <p><strong>Tração:</strong> traseira ou integral.</p>
+
+                        <button
+                            class="btn btn-motorsport"
+                            onclick="mostrarCarro('Porsche 911')"
+                        >
+                            Conhecer modelo
+                        </button>
+
+                    </div>
+
+                </article>
+
+         
+                <article class="card h-100">
+
+                    <img
+                        src="img/evo.jpg"
+                        alt="Mitsubishi Lancer Evolution"
+                    >
+
+                    <div class="card-conteudo">
+
+                        <h3>Mitsubishi Lancer Evolution</h3>
+
+                        <p>
+                            Modelo esportivo conhecido pela
+                            tradição nos ralis.
+                        </p>
+
+                        <p><strong>Motor:</strong> 2.0 turbo</p>
+
+                        <p><strong>Tração:</strong> integral.</p>
+
+                        <button
+                            class="btn btn-motorsport"
+                            onclick="mostrarCarro('Mitsubishi Lancer Evolution')"
+                        >
+                            Conhecer modelo
+                        </button>
+
+                    </div>
+
+                </article>
+   
+                <article class="card h-100">
+
+                    <img
+                        src="img/bmw-m3.jpg"
+                        alt="BMW M3"
+                    >
+
+                    <div class="card-conteudo">
+
+                        <h3>BMW M3</h3>
+
+                        <p>
+                            Uma combinação de esportividade,
+                            conforto e tecnologia.
+                        </p>
+
+                        <p><strong>Motor:</strong> varia conforme a geração.</p>
+
+                        <p><strong>Categoria:</strong> sedã esportivo.</p>
+
+                        <button
+                            class="btn btn-motorsport"
+                            onclick="mostrarCarro('BMW M3')"
+                        >
+                            Conhecer modelo
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div
+                id="resultadoCarro"
+                class="alert alert-dark border-warning mt-4"
+                aria-live="polite"
+            >
+                Selecione um modelo para conhecer mais.
+            </div>
+
+        </section>
+
+    
+        <section class="container mt-5 mb-5">
+
+            <h2 class="titulo-tabela">
+                COMPARATIVO DE MODELOS
+            </h2>
+
+            <div class="tabela-responsiva">
+
+                <table class="table table-dark table-striped table-hover tabela-carros">
+
+                    <thead>
+                        <tr>
+                            <th>Modelo</th>
+                            <th>Motor</th>
+                            <th>Categoria</th>
+                            <th>Tração</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Nissan GT-R R35</td>
+                            <td>3.8 V6 Biturbo</td>
+                            <td>Esportivo</td>
+                            <td>Integral</td>
+                        </tr>
+
+                        <tr>
+                            <td>Toyota Supra MK4</td>
+                            <td>3.0 seis cilindros</td>
+                            <td>Esportivo</td>
+                            <td>Traseira</td>
+                        </tr>
+
+                        <tr>
+                            <td>Porsche 911</td>
+                            <td>Varia por versão</td>
+                            <td>Esportivo</td>
+                            <td>Traseira/Integral</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lancer Evolution</td>
+                            <td>2.0 Turbo</td>
+                            <td>Esportivo</td>
+                            <td>Integral</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+
+        <p>
+            © 2026 Garage Performance - Todos os direitos reservados.
+        </p>
+
+        <p>
+            Paixão por carros, potência e performance.
+        </p>
+
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="js/script.js"></script>
+
+    <script>
+        function mostrarCarro(nome) {
+
+            const resultado = document.getElementById("resultadoCarro");
+
+            resultado.textContent =
+                "Você selecionou: " + nome +
+                ". Explore suas características no Garage Performance!";
+
+        }
+    </script>
+
+</body>
+</html>

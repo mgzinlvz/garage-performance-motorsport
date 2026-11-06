@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Galeria de carros esportivos e preparados.">
+    <title>Garage Performance | Galeria</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .aviso-galeria {
+            background-color: #181b20;
+            border: 1px solid #ffd400;
+            border-left: 5px solid #ffd400;
+            border-radius: 8px;
+            color: #f2f2f2;
+            padding: 18px;
+            margin-top: 24px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <nav class="menu">
+
+            <a href="index.html" class="logo">
+                GARAGE<span> PERFORMANCE</span>
+            </a>
+
+            <ul class="menu-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="esportivos.html">Esportivos</a></li>
+                <li><a href="preparacoes.html">Preparações</a></li>
+                <li><a href="galeria.html" aria-current="page">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="https://www.fia.com/" target="_blank" rel="noopener noreferrer">FIA</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="titulo-pagina">
+
+            <h1>NOSSA <span>GALERIA</span></h1>
+
+            <p>
+                Imagens, vídeos e experiências do universo automotivo.
+            </p>
+
+        </section>
+
+       
+        <section class="container">
+
+            <h2 class="titulo-tabela">MÁQUINAS EM DESTAQUE</h2>
+
+            <div class="galeria-grid">
+
+                <figure class="foto-galeria"
+                    onclick="mostrarFoto('Nissan GT-R', 'Um esportivo japonês conhecido pelo motor V6 biturbo e tração integral.')">
+
+                    <img src="img/nissan-gtr.jpg"
+                        alt="Nissan GT-R preparado">
+
+                    <figcaption>Nissan GT-R</figcaption>
+
+                </figure>
+
+                <figure class="foto-galeria"
+                    onclick="mostrarFoto('Toyota Supra', 'Um ícone da cultura automotiva, conhecido pelo motor 2JZ.')">
+
+                    <img src="img/toyota-supra.jpg"
+                        alt="Toyota Supra esportivo">
+
+                    <figcaption>Toyota Supra</figcaption>
+
+                </figure>
+
+                <figure class="foto-galeria"
+                    onclick="mostrarFoto('Porsche 911', 'Um esportivo reconhecido por sua engenharia e desempenho.')">
+
+                    <img src="img/porsche-911.jpg"
+                        alt="Porsche 911">
+
+                    <figcaption>Porsche 911</figcaption>
+
+                </figure>
+
+                <figure class="foto-galeria"
+                    onclick="mostrarFoto('Lancer Evolution', 'Um modelo japonês com forte tradição no automobilismo de rali.')">
+
+                    <img src="img/evo.jpg"
+                        alt="Mitsubishi Lancer Evolution">
+
+                    <figcaption>Lancer Evolution</figcaption>
+
+                </figure>
+
+                <figure class="foto-galeria"
+                    onclick="mostrarFoto('BMW M3', 'Uma combinação de esportividade, conforto e tecnologia.')">
+
+                    <img src="img/bmw-m3.jpg"
+                        alt="BMW M3">
+
+                    <figcaption>BMW M3</figcaption>
+
+                </figure>
+
+                <figure class="foto-galeria"
+                    onclick="mostrarFoto('Preparação de motores', 'Modificações mecânicas e tecnológicas voltadas ao desempenho automotivo.')">
+
+                    <img src="img/motor.jpg"
+                        alt="Motor preparado">
+
+                    <figcaption>Preparação de motores</figcaption>
+
+                </figure>
+
+            </div>
+
+     
+            <div id="resultadoFoto"
+                class="aviso-galeria"
+                aria-live="polite">
+
+                Clique em uma imagem para conhecer mais sobre ela.
+
+            </div>
+
+        </section>
+
+    
+        <section class="container midia mt-5">
+
+            <h2>VÍDEO AUTOMOTIVO</h2>
+
+            <p>
+                Confira um conteúdo sobre o universo dos carros esportivos.
+            </p>
+
+            <video
+                controls
+                preload="metadata"
+                width="100%"
+                poster="img/banner.jpg">
+
+                <source src="video/carros.mp4" type="video/mp4">
+
+                Seu navegador não suporta a reprodução de vídeo.
+
+            </video>
+
+        </section>
+
+ 
+        <section class="container midia mt-5 mb-5">
+
+            <h2>TRILHA SONORA</h2>
+
+            <p>
+                Uma experiência sonora para acompanhar nossa paixão por carros.
+            </p>
+
+            <audio controls preload="metadata" style="width: 100%;">
+
+                <source src="audio/musica.mp3" type="audio/mpeg">
+
+                Seu navegador não suporta a reprodução de áudio.
+
+            </audio>
+
+        </section>
+
+    </main>
+
+  
+    <footer class="rodape">
+
+        <p>
+            © 2026 Garage Performance - Todos os direitos reservados.
+        </p>
+
+        <p>
+            Paixão por carros, potência e performance.
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <script>
+
+        function mostrarFoto(nome, descricao) {
+
+            const resultado = document.getElementById("resultadoFoto");
+
+            resultado.textContent = nome + ": " + descricao;
+
+        }
+
+    </script>
+
+</body>
+</html>
